@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: auto;
+  }
+  .actions {
+    display: block;
+  }
+  .actions > button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .actions > div {
+    margin: 20px auto;
+  }
+  .item-image img {
+    max-height: 250px;
+  }
+  .item-details {
+    padding: 0;
+  }
+}
