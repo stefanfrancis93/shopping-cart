@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "brand_name": "Grofers Mother's Choice",
     "product_name": "Grofers Mother's Choice Kachi Ghani Mustard Oil (Pouch)",
@@ -7,7 +8,8 @@
     "mrp": 499,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_391740.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 2,
     "brand_name": "O'range",
     "product_name": "O'range Coconut Oil (Bottle)",
@@ -16,7 +18,8 @@
     "mrp": 219,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_396059.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 3,
     "brand_name": "Family Farm",
     "product_name": "Family Farm White Dried Peas",
@@ -25,7 +28,8 @@
     "mrp": 100,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_404089.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 4,
     "brand_name": "Tata",
     "product_name": "Tata Salt",
@@ -34,7 +38,8 @@
     "mrp": 20,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_105.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 5,
     "brand_name": "Ganesh",
     "product_name": "Ganesh Whole Wheat Chakki Atta",
@@ -43,7 +48,8 @@
     "mrp": 203,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_162437.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 6,
     "brand_name": "Fortune",
     "product_name": "Fortune Premium Kachi Ghani Pure Mustard Oil (Pouch)",
@@ -52,7 +58,8 @@
     "mrp": 146,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_50.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 7,
     "brand_name": "Emami",
     "product_name": "Emami Healthy & Tasty Kachi Ghani Mustard Oil (Pouch)",
@@ -61,7 +68,8 @@
     "mrp": 135,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_109134.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 8,
     "brand_name": "Ganesh",
     "product_name": "Ganesh Premium Maida",
@@ -70,7 +78,8 @@
     "mrp": 47,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_134408.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 9,
     "brand_name": "Ganesh",
     "product_name": "Ganesh Sooji/Rava",
@@ -79,7 +88,8 @@
     "mrp": 25,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_59822.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 10,
     "brand_name": "Family Farm",
     "product_name": "Family Farm Chana Dal",
@@ -88,7 +98,8 @@
     "mrp": 120,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_400098.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 11,
     "brand_name": "Chakki",
     "product_name": "Chakki Atta",
@@ -97,7 +108,8 @@
     "mrp": 175,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_388638.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 12,
     "brand_name": "Mother's Choice",
     "product_name": "Mother's Choice Kala Chana/Brown Chana",
@@ -106,7 +118,8 @@
     "mrp": 60,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_389662.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 13,
     "brand_name": "Aashirvaad",
     "product_name": "Aashirvaad Shudh Chakki Whole Wheat Atta",
@@ -115,7 +128,8 @@
     "mrp": 203,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_333764.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 14,
     "brand_name": "King's",
     "product_name": "King's Refined Soyabean Oil (Pouch)",
@@ -124,7 +138,8 @@
     "mrp": 110,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_61510.jpg",
     "offer_text": 18
-}, {
+  },
+  {
     "id": 15,
     "brand_name": "Nova",
     "product_name": "Nova Ghee (Carton)",
@@ -133,4 +148,5 @@
     "mrp": 526,
     "image_url": "https://cdn.grofers.com/app/images/products/full_screen/pro_42249.jpg",
     "offer_text": 18
-}]
+  }
+]
