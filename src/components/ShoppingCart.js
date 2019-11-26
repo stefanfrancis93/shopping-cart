@@ -17,6 +17,7 @@ function ShoppingCart() {
       .then(response => response.json())
       .then(data => setProducts(data));
   }, []);
+
   var renderItems = () =>
     products.map(item => {
       return (
@@ -28,17 +29,25 @@ function ShoppingCart() {
         />
       );
     });
+
   var addToTotal = addAmount => {
     setTotal(++total);
     setTotalAmount((totalAmount = totalAmount + addAmount));
   };
+
   var removeFromTotal = removeAmount => {
     setTotal(--total);
     setTotalAmount((totalAmount = totalAmount - removeAmount));
   };
+
   var openModal = () => {
     setShow(true);
   };
+
+  var closeModal = () => {
+    setShow(false);
+  };
+
   return (
     <div className="shopping-cart">
       {products.length ? (
@@ -51,7 +60,7 @@ function ShoppingCart() {
             totalQuantity={totalAmount}
             openModal={openModal}
           />
-          <Modal show={show}>
+          <Modal show={show} closeModal={closeModal}>
             <img src={success} className="modal-image" alt="success" />
             <div className="modal-total">Total Price: {totalAmount}</div>
             <div>Transaction Successful</div>

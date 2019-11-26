@@ -11,7 +11,7 @@
 }
 
 .shopping-cart {
-  padding: 20px 20px 60px;
+  padding: 20px 20px 100px;
 }
 
 .spinner {
@@ -45,6 +45,16 @@
   padding: 15px;
 }
 
+.brand-name {
+  font-size: 25px;
+  color: green;
+  font-family: auto;
+}
+
+.item-price {
+  font-weight: bold;
+}
+
 .actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,6 +71,8 @@
   height: 30px;
   font-size: 15px;
   cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .actions > div {
@@ -73,9 +85,10 @@
   outline: none;
   border-radius: 50%;
   height: 30px;
-  font-size: 15px;
+  font-size: 20px;
   width: 30px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .quantity {
@@ -97,6 +110,11 @@
   grid-template-columns: 3fr 2fr;
 }
 
+.totals > div {
+  font-size: 20px;
+  font-family: auto;
+}
+
 .checkout-container {
   align-items: center;
   justify-content: flex-end;
@@ -112,6 +130,8 @@
   font-size: 15px;
   cursor: pointer;
   width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .modal {

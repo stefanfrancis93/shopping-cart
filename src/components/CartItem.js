@@ -4,20 +4,24 @@ import AddRemoveQuantity from "./AddRemoveQuantity";
 
 function CartItem({ item, add, remove }) {
   var [number, setNumber] = useState(0);
+
   var addToCart = () => {
     setNumber(++number);
     add(item.price);
   };
+
   var addItem = () => {
     setNumber(++number);
     add(item.price);
   };
+
   var removeItem = () => {
     if (number > 0) {
       setNumber(--number);
       remove(item.price);
     }
   };
+
   return (
     <div className="cart-item">
       <div className="item-image">
@@ -28,8 +32,8 @@ function CartItem({ item, add, remove }) {
         <div className="brand-name">{item.brand_name}</div>
         <div className="product-name">{item.product_name}</div>
         <div className="amount">{item.quantity}</div>
-        <div className="item-mrp">{item.mrp}</div>
-        <div className="item-price">{item.price}</div>
+        <div className="item-mrp">MRP {item.mrp}</div>
+        <div className="item-price">Rs {item.price}</div>
         <div className="actions">
           <AddCartButton handleClick={addToCart} />
           <AddRemoveQuantity

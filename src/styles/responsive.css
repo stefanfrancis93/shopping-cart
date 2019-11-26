@@ -21,3 +21,8 @@
     padding: 0;
   }
 }
+@media (max-width: 320px) {
+  .bottom-fixed-bar button {
+    width: 150px;
+  }
+}

@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^5.0.0",
     "json-server": "^0.15.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-server": "json-server -p 3001 -w src/data/data.json"
+    "client": "react-scripts start",
+    "server": "json-server -p 3001 -w src/data/products.json"
   },
   "eslintConfig": {
     "extends": "react-app"

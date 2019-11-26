@@ -1,13 +1,9 @@
 import React, { useRef } from "react";
 import close from "../images/close.png";
 
-function Modal({ show, children }) {
+function Modal({ show, children, closeModal }) {
   const modalRef = useRef(null);
   var visibility = show;
-  var closeModal = () => {
-    visibility = !visibility;
-    modalRef.current.style.visibility = "hidden";
-  };
 
   return (
     <div
