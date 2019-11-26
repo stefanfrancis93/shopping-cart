@@ -15,7 +15,10 @@ function ShoppingCart() {
     var URL = "http://localhost:3001/products";
     fetch(URL)
       .then(response => response.json())
-      .then(data => setProducts(data));
+      .then(data => setProducts(data))
+      .catch(err => {
+        console.log(err);
+      });
   }, []);
 
   var renderItems = () =>
