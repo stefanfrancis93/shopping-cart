@@ -12,7 +12,7 @@ function ShoppingCart() {
   var [products, setProducts] = useState([]);
 
   useEffect(() => {
-    var URL = "http://localhost:3001/products";
+    var URL = "products.json";
     fetch(URL)
       .then(response => response.json())
       .then(data => setProducts(data))
