@@ -27,7 +27,9 @@ function CartItem({ item, add, remove }) {
       <div className="item-image">
         <div className="image-wrapper">
           <img src={item.image_url} alt={item.product_name} />
-          <div>{item.offer_text}% OFF</div>
+          <div className="offer-text">
+            <div className="offer-content">{item.offer_text}% OFF</div>
+          </div>
         </div>
       </div>
       <div className="item-details">

@@ -10,6 +10,11 @@
   .image-wrapper {
     position: static;
     height: auto;
+    margin-bottom: 20px;
+  }
+
+  .offer-text {
+    width: 150px;
   }
 
   .actions {
