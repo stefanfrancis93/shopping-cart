@@ -4,6 +4,20 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -15,14 +29,21 @@
 }
 
 .spinner {
-  max-width: 80px;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
+  max-width: 80px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.spinner img {
+  max-width: 80px;
+  width: 100%;
 }
 
 .cart-item {
@@ -34,6 +55,17 @@
 
 .item-image {
   text-align: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 146px;
 }
 
 .item-image img {
@@ -42,6 +74,10 @@
 
 .item-details {
   padding: 15px;
+}
+
+.item-details>div {
+  margin: 5px 0;
 }
 
 .brand-name {
@@ -60,7 +96,7 @@
   margin-top: 20px;
 }
 
-.actions > button {
+.actions>button {
   max-width: 150px;
   min-width: 100px;
   background: #65ce34;
@@ -74,11 +110,11 @@
   text-transform: uppercase;
 }
 
-.actions > div {
+.actions>div {
   text-align: center;
 }
 
-.actions > div > button {
+.actions>div>button {
   background: #65ce34;
   border: none;
   outline: none;
@@ -104,12 +140,12 @@
   color: #1a2b70;
 }
 
-.bottom-fixed-bar > div {
+.bottom-fixed-bar>div {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
 
-.totals > div {
+.totals>div {
   font-size: 20px;
   font-family: auto;
 }
@@ -159,8 +195,14 @@
   padding: 20px;
 }
 
+.modal-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .modal-image {
-  width: 150px;
+  width: 100px;
   margin-bottom: 15px;
 }
 

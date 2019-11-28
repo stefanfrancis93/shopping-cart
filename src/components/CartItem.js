@@ -25,8 +25,10 @@ function CartItem({ item, add, remove }) {
   return (
     <div className="cart-item">
       <div className="item-image">
-        <img src={item.image_url} alt={item.product_name} />
-        <div>{item.offer_text}% OFF</div>
+        <div className="image-wrapper">
+          <img src={item.image_url} alt={item.product_name} />
+          <div>{item.offer_text}% OFF</div>
+        </div>
       </div>
       <div className="item-details">
         <div className="brand-name">{item.brand_name}</div>

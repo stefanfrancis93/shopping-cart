@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import CartItem from "./CartItem";
 import BottomFixedBar from "./BottomFixedBar";
 import Modal from "./Modal";
-import success from "../images/success.png";
-import spinner from "../images/spinner.gif";
+import successImg from "../images/success.png";
+import Spinner from "./Spinner";
+import CartList from "./CartList";
 
 function ShoppingCart() {
   var [total, setTotal] = useState(0);
@@ -21,28 +21,6 @@ function ShoppingCart() {
       });
   }, []);
 
-  var renderItems = () =>
-    products.map(item => {
-      return (
-        <CartItem
-          key={item.id}
-          item={item}
-          add={addToTotal}
-          remove={removeFromTotal}
-        />
-      );
-    });
-
-  var addToTotal = addAmount => {
-    setTotal(++total);
-    setTotalAmount((totalAmount = totalAmount + addAmount));
-  };
-
-  var removeFromTotal = removeAmount => {
-    setTotal(--total);
-    setTotalAmount((totalAmount = totalAmount - removeAmount));
-  };
-
   var openModal = () => {
     setShow(true);
   };
@@ -55,23 +33,21 @@ function ShoppingCart() {
     <div className="shopping-cart">
       {products.length ? (
         <>
-          <div className="items">
-            <div className="container">{renderItems()}</div>
-          </div>
+          <CartList products={products} total={total} totalAmount={totalAmount} setTotal={setTotal} setTotalAmount={setTotalAmount} />
           <BottomFixedBar
             totalItems={total}
             totalQuantity={totalAmount}
             openModal={openModal}
           />
           <Modal show={show} closeModal={closeModal}>
-            <img src={success} className="modal-image" alt="success" />
+            <img src={successImg} className="modal-image" alt="success" />
             <div className="modal-total">Total Price: {totalAmount}</div>
             <div>Transaction Successful</div>
           </Modal>
         </>
       ) : (
-        <img src={spinner} alt="loader" className="spinner" />
-      )}
+          <Spinner />
+        )}
     </div>
   );
 }

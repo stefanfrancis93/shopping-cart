@@ -1,21 +1,18 @@
-import React, { useRef } from "react";
-import close from "../images/close.png";
+import React from "react";
+import closeImg from "../images/close.png";
 
 function Modal({ show, children, closeModal }) {
-  const modalRef = useRef(null);
-  var visibility = show;
 
   return (
     <div
       className="modal"
-      style={{ display: visibility ? "block" : "none" }}
-      ref={modalRef}
+      style={{ display: show ? "block" : "none" }}
     >
       <div className="modal-wrapper">
         <button onClick={closeModal} className="close-button">
-          <img src={close} alt="close-button" />
+          <img src={closeImg} alt="close-button" />
         </button>
-        {children}
+        <div className="modal-content">{children}</div>
       </div>
     </div>
   );
